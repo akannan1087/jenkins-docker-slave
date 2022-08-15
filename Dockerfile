@@ -19,7 +19,6 @@ RUN apt-get update && \
     echo "jenkins:password" | chpasswd && \
     mkdir /home/jenkins/.m2
 
-#ADD settings.xml /home/jenkins/.m2/
 # Copy authorized keys
 COPY .ssh/authorized_keys /home/jenkins/.ssh/authorized_keys
 
