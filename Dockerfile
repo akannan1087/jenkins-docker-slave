@@ -11,6 +11,8 @@ RUN apt-get update && \
     apt-get install -qy default-jdk && \
 # Install maven
     apt-get install -qy maven && \
+# Install adduser package
+    apt-get install -qy adduser && \
 # Cleanup old packages
     apt-get -qy autoremove && \
 # Add user jenkins to the image
